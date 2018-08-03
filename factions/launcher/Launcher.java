@@ -218,7 +218,8 @@ public class Launcher extends Application {
     private void launchGame(String username, int memory) {
         
         //Remove whitespace and special characters from username.
-        username = username.replace("\\s+", "_").replace("[^a-zA-Z\\d]", "");
+        username = username.replaceAll("\\s+", "_")
+                .replaceAll("[^a-zA-Z_\\d]", "");
         
         //Export settings.
         setValue("username", username);
