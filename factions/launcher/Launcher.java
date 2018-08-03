@@ -59,6 +59,7 @@ public class Launcher extends Application {
     static {
         DEF_SETTINGS.put("username", "");
         DEF_SETTINGS.put("memory", "6");
+        DEF_SETTINGS.put("version", "");
     }
     
     /** Map containing settings loaded from file. */
